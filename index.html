@@ -1,61 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>404clue: not found</title>
-
-  <!-- Gothic & Bold Fonts from Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&family=Anton&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <title>404Clue: All Pages</title>
   <style>
-    * {
+    /* General Styles */
+    body {
+      background: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
     }
-
-    body {
-      height: 100vh;
-      background-color: #000;
-      color: #fff;
-      font-family: 'Anton', sans-serif;
+    h1 {
+      color: #e53935;
+      margin-left: 32px;
+      margin-top: 32px;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+    }
+    /* 404 Page Styles */
+    .top-bar {
+      width: 100%;
+      height: 8px;
+      background: #e53935;
+      margin-bottom: 0.5em;
+    }
+    .nav {
+      position: absolute;
+      top: 12px;
+      right: 40px;
+      font-size: 1.1em;
+    }
+    .nav a {
+      color: #e53935;
+      text-decoration: none;
+      margin-left: 32px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .main-content {
+      margin: 60px 0 0 40px;
+    }
+    .main-content h1 {
+      font-size: 4em;
+      margin: 0;
+      line-height: 1.1;
+    }
+    .explore-btn {
+      display: inline-block;
+      background: #e53935;
+      color: #000;
+      font-weight: bold;
+      font-size: 1.5em;
+      border-radius: 18px;
+      padding: 16px 48px;
+      margin-top: 32px;
+      box-shadow: 3px 3px 0 #b71c1c;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .footer {
+      position: absolute;
+      bottom: 18px;
+      right: 30px;
+      color: #e53935;
+      font-size: 1em;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    /* Explore Page Styles */
+    .explore-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 32px;
+    }
+    .explore-section {
+      width: 32%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+    }
+    .explore-section img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .explore-section p, .explore-section span {
+      color: #e53935;
+      font-size: 1.1em;
+      margin: 0 0 12px 0;
       text-align: center;
     }
-
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      font-family: 'Playfair Display', serif;
-      font-size: 24px;
-      color: #ff1e1e;
-      letter-spacing: 2px;
+    .explore-section span {
+      color: #fff;
+      font-size: 1em;
+      margin-top: 6px;
+      display: block;
     }
-
-    .coming-soon {
-      font-size: 48px;
-      color: #ff1e1e;
-      text-shadow: 2px 2px 8px #ff0000;
+    /* FAQs Page Styles */
+    .faq-container {
+      margin: 32px;
+      font-size: 1.15em;
+      line-height: 1.6;
+      max-width: 900px;
     }
-
-    @media (max-width: 600px) {
-      .coming-soon {
-        font-size: 32px;
-      }
-
-      .logo {
-        font-size: 18px;
-      }
+    .faq-container strong {
+      color: #e53935;
+    }
+    /* Info Page Styles */
+    .info-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 32px;
+      font-size: 1.1em;
+    }
+    .info-left, .info-right {
+      width: 47%;
+    }
+    .info-left ul {
+      padding-left: 20px;
+    }
+    .info-left li {
+      margin-bottom: 16px;
+    }
+    .info-right {
+      text-align: left;
+    }
+    .info-right span {
+      display: block;
+      margin-top: 18px;
+      color: #e53935;
     }
   </style>
 </head>
 <body>
-  <div class="logo">404clue: not found</div>
-  <div class="coming-soon">COMING SOON!!</div>
+  <!-- 404 Page -->
+  <div class="top-bar"></div>
+  <div class="nav">
+    <a href="#info">info</a>
+    <a href="#faqs">FAQs</a>
+  </div>
+  <div class="main-content">
+    <h1>404Clue:<br>Not<br>Found</h1>
+    <a href="#explore" class="explore-btn">EXPLORE</a>
+  </div>
+  <div class="footer">any queries- DM us on @404clue</div>
+  
+  <!-- Explore Page -->
+  <h1 id="explore">EXPLORE</h1>
+  <div class="explore-container">
+    <div class="explore-section">
+      <img src="https://pplx-res.cloudinary.com/image/upload/v1745131081/user_uploads/RstZQsqTGGVRYCU/1000024347.jpg" alt="Case 1">
+      <p>1. Famous artist, dead in their locked studio – who painted their final portrait??</p>
+    </div>
+    <div class="explore-section">
+      <img src="https://pplx-res.cloudinary.com/image/upload/v1745131075/user_uploads/NZxepZUQJDLtpRn/1000024346.jpg" alt="Case 2">
+      <p>2. Old friends, fatal reunion – what buried secret came back to haunt them?</p>
+    </div>
+    <div class="explore-section">
+      <img src="https://pplx-res.cloudinary.com/image/upload/v1745131068/user_uploads/AFtrpmmowhsfrqg/1000024345.jpg" alt="Case 3">
+      <span>The party's over<br>but the mystery just started</span>
+    </div>
+  </div>
+  
+  <!-- FAQs Page -->
+  <h1 id="faqs">FAQs</h1>
+  <div class="faq-container">
+    <ol>
+      <li>
+        <strong>What’s included in each murder mystery kit?</strong><br>
+        Each kit (digital or physical) includes case files, clues, suspect profiles, maps, pictures and exclusive interactive elements designed to give you a full thriller experience.
+      </li>
+      <li>
+        <strong>Is there Cash on Delivery (COD) available?</strong><br>
+        No, we currently do not offer COD. All orders must be prepaid through our secure payment gateway.
+      </li>
+      <li>
+        <strong>Are the mystery experiences solo or multiplayer?</strong><br>
+        Our kits are designed for both solo sleuths and groups! You can solve it alone or make it a fun game night with friends or family.
+      </li>
+    </ol>
+  </div>
+  
+  <!-- Info Page -->
+  <h1 id="info">INFO</h1>
+  <div class="info-container">
+    <div class="info-left">
+      <ul>
+        <li>All products are recommended for ages 16 and above for safety reasons.</li>
+        <li>We offer both digital and physical kits of our case studies. Please note that physical kits may have limited availability.</li>
+      </ul>
+    </div>
+    <div class="info-right">
+      Physical kits are priced higher than digital versions due to delivery and packaging costs.<br><br>
+      To place an order, please send us a direct message on Instagram at [@404clue].<br><br>
+      These case studies are purely for entertainment purposes and are not meant to be taken seriously.
+    </div>
+  </div>
 </body>
 </html>
